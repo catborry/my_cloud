@@ -14,7 +14,7 @@ spring:
     password: yyqdemao
 # 应用服务 WEB 访问端口
 server:
-  port: 8001
+  port: 8002
 #下面这些内容是为了让MyBatis映射
 #指定Mybatis的Mapper文件
 mybatis:
@@ -22,17 +22,17 @@ mybatis:
   #指定Mybatis的实体目录
   type-aliases-package: com.yyqdemao.devment.could_payment8001.mybatis.entity
 eureka:
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      defaultZone: http://localhost:7001/eureka,http://localhost:7002/eureka
   instance:
     #服务id
-    instance-id: payment8001
+    instance-id: payment8002
     #显示ip
     prefer-ip-address: true
     # eureka 客户端向服务端发送心跳间隔 默认30s
     lease-renewal-interval-in-seconds: 1
     #eureka 服务端在收到最候一次心跳等待上限 默认90s 超时剔除服务
     lease-expiration-duration-in-seconds: 2
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka,http://localhost:7002/eureka

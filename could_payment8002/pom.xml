@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>com.yyqdemao</groupId>
         <artifactId>my_cloud</artifactId>
+        <groupId>com.yyqdemao</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>could_payment8001</artifactId>
-    <description>Demo project for Spring Boot</description>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>could_payment8002</artifactId>
 
     <properties>
         <java.version>1.8</java.version>
@@ -30,15 +31,15 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
@@ -115,7 +116,7 @@
                 <configuration>
                     <fork>true</fork>
                     <addResources>true</addResources>
-                    <mainClass>com.yyqdemao.devment.could_payment8001.CouldPayment8001Application</mainClass>
+                    <mainClass>com.yyqdemao.devment.could_payment8002.CouldPayment8001Application</mainClass>
                 </configuration>
                 <executions>
                     <execution>
