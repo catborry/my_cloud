@@ -14,6 +14,7 @@
         <module>could_api_comment</module>
         <module>could_eureka_server7002</module>
         <module>could_payment8002</module>
+        <module>cas_demo</module>
 
     </modules>
     <properties>
