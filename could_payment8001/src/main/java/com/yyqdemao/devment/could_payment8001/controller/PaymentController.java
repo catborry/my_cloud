@@ -29,7 +29,8 @@ public class PaymentController {
     }
 
     @GetMapping
-    public CommonResult<Payment> getPayment(long id) {
+    public CommonResult<Payment> getPayment(long id) throws InterruptedException {
+        Thread.sleep(3);
         Payment paymentById = paymentService.getPaymentById(id);
         return new CommonResult<Payment>(200, "操作成功8001", paymentById);
     }

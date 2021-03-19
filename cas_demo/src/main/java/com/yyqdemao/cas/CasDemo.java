@@ -8,6 +8,8 @@ public class CasDemo {
         AtomicInteger atomicInteger = new AtomicInteger(5);
         boolean b = atomicInteger.compareAndSet(atomicInteger.intValue(), 300);
         int i = atomicInteger.incrementAndGet();
+        int andIncrement = atomicInteger.getAndIncrement();
         System.out.println(i);
+        System.out.println(andIncrement);
     }
 }

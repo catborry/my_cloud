@@ -10,7 +10,7 @@ public class ApplicationContextConfig {
 
 
     @Bean
-    @LoadBalanced
+//    @LoadBalanced
     //启用默认负载均衡,可以使用服务名调用其他服务
     public RestTemplate getRestTemplate() {
         return new RestTemplate();

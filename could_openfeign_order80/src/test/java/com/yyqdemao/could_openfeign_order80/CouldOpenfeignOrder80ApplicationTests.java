@@ -1,14 +1,13 @@
-package com.yyqdemao;
+package com.yyqdemao.could_openfeign_order80;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-//@SpringBootTest
-class CouldOrder80ApplicationTests {
+@SpringBootTest
+class CouldOpenfeignOrder80ApplicationTests {
 
     @Test
     void contextLoads() {
-        System.out.println((2 << 30) + 2);
     }
 
 }
